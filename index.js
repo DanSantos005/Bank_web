@@ -105,7 +105,7 @@ withdrawBtn.addEventListener('click', () => {
     return;
   }
 
-  withdraw.innerText = Number(withdraw.innerText) + value;
+  withdraw.innerText = Number(withdraw.innerText) + value; //withdrawal panel inner text
   balance.innerText = newBalance;
   withdrawInput.value = '';
 });
