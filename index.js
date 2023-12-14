@@ -31,7 +31,7 @@ const loginPage = document.getElementById('login-box'),
 
 // Login event listener
 submitBtn.addEventListener('click', () => {
-  const email = document.getElementById('email-input').value;
+  const email = document.getElementById('user-input').value;
   const password = document.getElementById('password-input').value;
 
   const user = users.find((user) => user.email === email && user.password === password);
