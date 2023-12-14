@@ -47,22 +47,6 @@ submitBtn.addEventListener('click', () => {
   }
 });
 
-// Deposit input validation
-depositInput.addEventListener('keyup', (event) => {
-  if (event.key === '-') {
-    event.preventDefault();
-    depositInput.value = parseFloat(depositInput.value) || '';
-  }
-});
-
-// Withdraw input validation
-withdrawInput.addEventListener('keyup', (event) => {
-  if (event.key === '-') {
-    event.preventDefault();
-    withdrawInput.value = parseFloat(withdrawInput.value) || '';
-  }
-});
-
 // Deposit button event listener
 depositBtn.addEventListener('click', () => {
   const value = parseFloat(depositInput.value);
