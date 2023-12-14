@@ -63,7 +63,7 @@ depositBtn.addEventListener('click', () => {
     return;
   }
 
-  deposit.innerText = Number(deposit.innerText) + value;
+  deposit.innerText = Number(deposit.innerText) + value; //deposits panel inner text
   balance.innerText = newBalance;
   depositInput.value = '';
 });
