@@ -1,17 +1,17 @@
 //Users definition
 const users = [
   {
-    email: 'Mali',
+    userName: 'Mali',
     password: 'password1',
     balance: 200,
   },
   {
-    email: 'Gera',
+    userName: 'Gera',
     password: 'password2',
     balance: 290,
   },
   {
-    email: 'Maui',
+    userName: 'Maui',
     password: 'password3',
     balance: 67,
   },
@@ -31,10 +31,10 @@ const loginPage = document.getElementById('login-box'),
 
 // Login event listener
 submitBtn.addEventListener('click', () => {
-  const email = document.getElementById('user-input').value;
+  const userName = document.getElementById('user-input').value;
   const password = document.getElementById('password-input').value;
 
-  const user = users.find((user) => user.email === email && user.password === password);
+  const user = users.find((user) => user.userName === userName && user.password === password);
 
   if (user) {
     balance.innerText = user.balance;
@@ -43,7 +43,7 @@ submitBtn.addEventListener('click', () => {
     loginPage.style.display = 'none';
     dashboard.classList.remove('d-none');
   } else {
-    alert('Invalid email or password.');
+    alert('Invalid username or password.');
   }
 });
 
